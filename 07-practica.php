@@ -31,7 +31,7 @@
         do {
             echo "<p>El número es: $a<br /></p>";
             $a++;
-        } while ($a <= 16);
+        } while ($a <= 16); //la condición se evalua DESPUÉS de ejecutar las declaraciones
     ?>
 <!-- /.. -->
 
