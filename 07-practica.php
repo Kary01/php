@@ -15,13 +15,13 @@
 
 <!-- Código PHP -->
     <?php
-        /*Cuando se desee un repetir un mismo bloque de código
+        /*Cuando se desee repetir un mismo bloque de código
             resulta más eficiente utilizar bucles while. Si la condicion
             nunca se vuelve falsa, la instrucción se seguirá ejecutando indefinidamente*/
             $i = 0;
 
             while ($i <= 10) {
-                echo "<p>El valor es: $i<br /></p>"; //código a ejecutar si se cumple la condición
+                echo "<p>El valor es: $i <br /></p>"; //código a ejecutar si se cumple la condición
                 $i++;
             }
 
@@ -29,7 +29,7 @@
         $a = 8;
 
         do {
-            echo "<p>El número es: $a<br /></p>";
+            echo "<p>El número es: $a <br /></p>";
             $a++;
         } while ($a <= 16); //la condición se evalua DESPUÉS de ejecutar las declaraciones
     ?>
