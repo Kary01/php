@@ -30,6 +30,17 @@
         foreach ($names as $nombre) { //en la primera interación el valor del elemnto actual se asigna a $nombre
             echo "<p>$nombre <br /></p>"; //el puntero del array se mueve hasta alcanzar el último elemento
         }
+
+        for ($i=0; $i < 20; $i++) { 
+            if ($i % 2 == 0) {
+               continue;
+            }
+            echo "<p> $i </p>";
+        }
+        /*la instrucción 'continue' permite omitir lo que queda de la iteración del bucle actual. 
+        Luego continúa la ejecución en la evaluación de la condición y pasa al comienzo 
+        de la siguiente iteración.*/
+        
     ?>
 <!-- /.. -->
 
