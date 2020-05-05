@@ -10,7 +10,7 @@
 <body>
 <!-- Código PHP -->
     <?php
-
+        //contenido estándar de ejemplo
         echo "<hr>";
         echo "<h3>Encabezado h3</h3>";
         echo "<p>Ejemplo de include y require</p>";
@@ -20,6 +20,9 @@
         while ($x <= 7) {
             $x++;
         }echo $x;
+
+        /*include sirve para añadir contenido estándar a varias páginas simultaneamente
+        require sirve de la misma forma, pero la diferencia esta en cómo aceptan los errores*/
     ?>
 <!-- /.. -->
 </body>
