@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kary Ruiz">
+    <meta name="description" content="Página de practica sobre formularios en PHP">
+    <title>Practica 13</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIOS EN PHP</h1>
+    </header>
+    <main>
+        <form action="14-practica.php" method="post"> 
+    <!-- El atributo 'action' especifica hacia donde se enviarán los datos -->
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="username">
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="userage">
+            <button type="submit">SEND</button>
+        </form>
+
+    <!-- El propósito de las superglobales '$_GET' y '$_POST' 
+        es recopilar los datos que se han ingresado en un formulario -->
+    </main>
+</body>
+</html>
