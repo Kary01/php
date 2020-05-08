@@ -6,7 +6,7 @@
     <meta name="author" content="Kary Ruiz">
     <meta name="description" content="Página de practica sobre
     validaciones en PHP">
-    <title>Document</title>
+    <title>Practica 17</title>
 
     <!-- Código CSS -->
     <style>
@@ -41,6 +41,7 @@
              $nameErr = "";
              $emailErr = "";
              $genderErr = "";
+             $websiteErr = "";
 
             //validación de envío del formulario
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -50,12 +51,19 @@
                     $nameErr = "Name is required";
                 }else{
                     $name = test_input($_POST["name"]);
+                    //validar si el nombre contiene solo letras
+                    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+                        $nameErr = "Only letters and white space allowed";
+                    }
                 }
 
                 if(empty($_POST["email"])){
                     $emailErr = "Email is required";
                 }else{
                     $email = test_input($_POST["email"]);
+                    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                        $emailErr = "Invalid email format";
+                    }
                 }
 
                 if(empty($_POST["gender"])){
@@ -64,8 +72,21 @@
                     $gender = test_input($_POST["gender"]);
                 }
 
-                $comment = test_input($_POST["comment"]);
-                $website = test_input($_POST["website"]);
+                if (empty($_POST["comment"])) {
+                    $comment = "";
+                    } else {
+                    $comment = test_input($_POST["comment"]);
+                    }
+                
+                if (empty($_POST["website"])) {
+                    $website = "";
+                }else{
+                    $website = test_input($_POST["website"]);
+                    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+                        $websiteErr = "Invalid URL";
+                    }
+                }
+
             }
 
             //función que evalúa y elimina espacios inecesarios o caracteres especiales ingresados
@@ -95,6 +116,7 @@
                 <br><br>
                 <label for="website">Website:</label>
                 <input type="url" name="website" id="user-website">
+                <span class="error">* <?php echo $websiteErr; ?></span>
                 <br><br>
                 <label for="comment">Comment:</label>
                 <textarea name="comment" id="user-comment" cols="40" rows="5"
