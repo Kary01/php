@@ -87,6 +87,7 @@
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="user-name">
                 <span class="error">* <?php echo $nameErr; ?></span>
+                <!-- Mensaje de error-->
                 <br><br>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="user-email">
