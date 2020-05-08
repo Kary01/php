@@ -21,27 +21,21 @@
                     <input type="text" name="lastname" id="user-last-name" placeholder="Smith" required></p>
                     <p><label for="age">How old are you?</label>
                     <input type="text" name="age" id="user-age" maxlength="2" size="2"></p>
-                    <label for="situation">What is your situation?</label>
-                    <input type="radio" name="situation" id="merried" value="Casado">Casado
-                    <input type="radio" name="situation" id="alone" value="Soltero">Soltero
+                    <label for="drink">Water or Soda?</label>
+                    <input type="radio" name="drink" id="water" value="water">water
+                    <input type="radio" name="drink" id="soda" value="soda">soda
             </fieldset>
             <fieldset>
-                <legend>Información de Contacto</legend>
-                <p><label for="tel">Teléfono:</label>
+                <legend>Contact</legend>
+                <p><label for="tel">Telephone:</label>
                 <input type="text" name="tel" id="user-tel" size="10" maxlength="10"></p>
                 <p><label for="email">Email:</label>
                 <input type="email" name="email" id="user-email" placeholder="bill_smith@gmail.com"></p>
-            </fieldset>
-            <fieldset>
-                <legend>Pasatiempos</legend>
-                <label for="hobbie">¿Cuál es tu actividad favorita?</label>
-                <input type="checkbox" name="hobbie" id="videogames" value="videojuegos">Videojuegos
-                <input type="checkbox" name="hobbie" id="reed" value="leer">Leer
-                <input type="checkbox" name="hobbie" id="walk" value="caminar">Caminar
-                <input type="checkbox" name="hobbie" id="music" value="música">Música
+                <textarea name="comments" id="user-comments" cols="30" rows="10"
+                placeholder="Comments..."></textarea>
             </fieldset>
             <br>
-            <button type="submit">ENVIAR FORMULARIO</button>
+            <button type="submit">Send Form</button>
         </form>
     </main>
 </body>
