@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kary Ruiz">
+    <meta name="description" content="Página de práctica con un formulario completo">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO</h1>
+    </header>
+    <main>
+        <form action="15-practica_formulario.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                    <p><label for="firstname">What is your first name?</label>
+                    <input type="text" name="firstname" id="user-first-name" placeholder="Bill" required></p>
+                    <p><label for="lastname">What is your last name?</label>
+                    <input type="text" name="lastname" id="user-last-name" placeholder="Smith" required></p>
+                    <p><label for="age">How old are you?</label>
+                    <input type="text" name="age" id="user-age" maxlength="2" size="2"></p>
+                    <label for="situation">What is your situation?</label>
+                    <input type="radio" name="situation" id="merried" value="Casado">Casado
+                    <input type="radio" name="situation" id="alone" value="Soltero">Soltero
+            </fieldset>
+            <fieldset>
+                <legend>Información de Contacto</legend>
+                <p><label for="tel">Teléfono:</label>
+                <input type="text" name="tel" id="user-tel" size="10" maxlength="10"></p>
+                <p><label for="email">Email:</label>
+                <input type="email" name="email" id="user-email" placeholder="bill_smith@gmail.com"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Pasatiempos</legend>
+                <label for="hobbie">¿Cuál es tu actividad favorita?</label>
+                <input type="checkbox" name="hobbie" id="videogames" value="videojuegos">Videojuegos
+                <input type="checkbox" name="hobbie" id="reed" value="leer">Leer
+                <input type="checkbox" name="hobbie" id="walk" value="caminar">Caminar
+                <input type="checkbox" name="hobbie" id="music" value="música">Música
+            </fieldset>
+            <br>
+            <button type="submit">ENVIAR FORMULARIO</button>
+        </form>
+    </main>
+</body>
+</html>
