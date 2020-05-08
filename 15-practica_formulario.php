@@ -10,11 +10,11 @@
         <h1>DATOS</h1>
     </header>
     <main>
-        <p>
-            Bienvenido <?php echo $_POST['firstname']." ".$_POST['lastname']; ?><br></p>
-            Tienes <?php echo $_POST['age']." años de edad"; ?><br>
-            Tu situción sentimental: <?php echo $_POST['drink']; ?><br>
-            Teléfono: <?php echo $_POST['tel']; ?><br>
+        <p>Welcome <?php echo $_POST['firstname']." ".$_POST['lastname']; ?></p>
+        <p> 
+            You are: <?php echo $_POST['age']." years old"; ?><br>
+            Water or Soda: <?php echo $_POST['drink']; ?><br>
+            Telephone: <?php echo $_POST['tel']; ?><br>
             Email: <?php echo $_POST['email']; ?><br>
             Your comments: <?php echo $_POST['comments']; ?><br>
         </p>
