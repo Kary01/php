@@ -66,6 +66,10 @@
         public function speak(){
             echo "Hello";
         }
+
+        public function display(){
+            echo "Su amigo es " .$this->name;
+        }
     }
 
     $p1 = new Person();
@@ -83,4 +87,11 @@
     echo "Su amigo es " .$p2->name;
     echo "<br>";
     echo "Y él tiene " .$p2->age. " años de edad";
+    echo "<br>";
+
+    $p3 = new Person();
+    $p3->name = "José";
+    $p3->display();
+
+
 ?>
