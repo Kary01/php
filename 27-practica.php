@@ -19,6 +19,9 @@
     } catch (PDOException $e) {
         echo "Conexión fallida".$e->getMessage();
         //en caso de encontrar error lo muestra
+
+        $conn = null;
+        //cerrar la conexión
     }
 
 ?>
