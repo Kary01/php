@@ -37,5 +37,11 @@
 
     /* La subclase 'Otherfruit' hereda todas las propiedades y métodos 
     de la clase padre 'Fruit'*/
-    
+
+
+    /* La 'Visibilidad' controla cómo se puede acceder a las propiedades y métodos
+        'public' especifica que es accesible desde cualquier lugar
+        'protected' especifica que solo es accesible dentro de la clase o por herencia 
+        'private' especifica que SOLO es accesible a la clase que lo define */
+
 ?>
