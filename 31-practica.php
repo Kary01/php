@@ -1,6 +1,7 @@
 <?php
 
-    /* Se puede insertar multiples datos al mismo tiempo */
+    /* Se puede insertar multiples datos al mismo tiempo
+        se debe separar las sentencias sql con punto y coma (;) */
 
     $servername = "localhost";
     $username = "root";
